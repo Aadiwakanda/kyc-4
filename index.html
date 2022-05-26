@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <title> KYC Verification</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    Put your KYC information here
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <form id="form" class="from1">
+        <b>*Need to be filled*</b>First Name: <input type="text" id="firstname" name="firstname"
+            placeholder="Your name.." />
+        <br> </br>
+        <b>*Need to be filled*</b> Last Name: <input type="text" id="lastname" name="lastname"
+            placeholder="Your last name.." />
+        <br> </br>
+
+        <b>*Need to be filled*</b> <label for="email"> Email: </label>
+        <input type="email" id="email" name="email" placeholder="Your email.." />
+        <br> </br>
+
+
+        <label for="gender">Gender: </label>
+        <input type="radio" id="gender" name="gender" value="male" />Male
+        <input type="radio" id="gender" name="gender" value="female" />Female
+        <input type="radio" id="gender" name="gender" value="other" />Other
+        <br> </br>
+
+        <b>*Need to be filled*</b> <label> Government ID proof </label>
+        <select id="select-show">
+            <option value="choose_1">Choose one </option>
+            <option value="one">passport</option>
+            <option value="two">aadhar card</option>
+        </select> <br>
+        <div id="one-show" class="option-show">You have choosen Passport :1st page <input type="file" id="pic_1">
+            ,2nd page <input type="file" id="pic_2">
+            <br> passport number-<input type="text" name="passport_number" class="numbers" placeholder="6 digit number">
+        </div>
+        <div id="two-show" class="option-show">You have choosen Aadhar card Front Picture <input type="file" id="pic_1">
+            ,Back pic <input type="file" id="pic_2">
+            <br> aadhar card number- <input type="text" name="aadhar_card_number" class="numbers"
+                placeholder="16 digit number"> </div>
+
+
+        <br>
+
+        <b>*Need to be filled*</b> <label> Company ID proof </label>
+        <select>
+            <option value="choose_1">Choose one
+            </option>
+            <option value="company_ID"> Company ID card
+            </option>
+            <option value="buissness_info"> Buissness information
+            </option>
+            <option value="collage_id">Collage ID </option>
+        </select>
+
+        <br>
+        <input type="file" name="id_proof" multiple><br>
+        <br>    
+
+        <div class="field">
+            <label for="urlfield">Enter Your social media handles link</label>
+            <input type="text" id="urlfield"  placeholder="instagram/facebook/linkden">
+        </div>
+        <div class="field">
+            <button type="submit">VALIDATE</button>
+        </div>
+        <div class="field">
+            <p id="resultText"></p>
+        </div>
+        
+       
+        <br>
+        
+        <br> </br>
+
+        <b>*Need to be filled*</b> <label>Correspondance Address Proof</label>
+
+        <select>
+            <option value="choose_1">Choose one
+            </option>
+            <option value="rental_agreement"> Rental agreement
+            </option>
+            <option value="electricity_bill"> Electricity Bill
+            </option>
+            <option value="gas_bill">Gas Bill </option>
+        </select>
+        <br>
+        <input type="file" id="address_proof">
+        <br>
+        <br>
+        <input type="submit" name="submit" value="upload">
+        <br>
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>
